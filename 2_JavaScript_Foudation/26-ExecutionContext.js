@@ -11,3 +11,5 @@ function sayMyName(){
 }
 
 sayMyName();
+
+console.log('End!');
