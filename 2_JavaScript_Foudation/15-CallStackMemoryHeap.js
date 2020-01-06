@@ -7,9 +7,38 @@ const human = { //Allocate memory fot the obj and its values ( Memory Heap );
     last: 'Neagoie' 
 }
 
+function subtractTwo(num){
+    return num - 2;
+}
+
 function calculate(){
     const sumTotal = 4 + 5;
-    return sumTotal;
+    return subtractTwo(sumTotal);
 }
 
 calculate();
+
+//STACK OVERFLOW
+
+function inception(){
+    inception();
+}
+
+inception();
+
+//MEMORY LEAKS (GLOBAL VARIABLEs, Event Listeners, setInterval)
+var a = 1;
+var b = 1;
+var c = 1;
+
+var elemenet = document.getElementById('button');
+elemenet.addEventListener('click', onClick);
+
+setInterval(() => {
+    //Referencing objects...
+}, 1000)
+
+
+
+
+
